@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="a" content="RSA Token Renew Form">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Page 1</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Page-1.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 3.23.2, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alatsi:400">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Token Renew v1",
+		"logo": "images/logowhiteHorizon2.svg"
+}</script>
+<script>
+  function changeTokenType(radio) {
+    if (radio.value=="Hardware Token") {
+      document.getElementById('pickuplocation').style.visibility = 'visible'; //Id, NOT ID
+      document.getElementById('pickuplocation').setAttribute("required", "required");
+      document.getElementById('phonetype').style.visibility = 'hidden'; //style.visibility = 'visible'/'hidden' keeps the space but style.display = 'block'/'none' does not
+      document.getElementById('phonetype').removeAttribute("required");
+    }
+    else if (radio.value=="Software Token") {
+      document.getElementById('pickuplocation').style.visibility = 'hidden';
+      document.getElementById('pickuplocation').removeAttribute("required");
+      document.getElementById('phonetype').style.visibility = 'visible';
+      document.getElementById('phonetype').setAttribute("required", "required");
+    }
+  }
+</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Page 1">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+  </head>
+  <body data-home-page="Page-1.html" data-home-page-title="Page 1" class="u-body"><header class="u-align-center u-clearfix u-header u-palette-1-dark-2 u-header" id="sec-2b2d"><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="#" class="u-image u-logo u-image-1">
+          <img src="images/logowhiteHorizon2.svg" class="u-logo-image u-logo-image-1" data-image-width="187">
+        </a>
+        <h1 id = "TitleText" class="u-cusom-font u-font-georgia u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-title u-text-1"></h1>
+        <script>    
+          const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+          const today = new Date();
+          let curMonth = month[today.getMonth()];
+          let curYear = today.getYear()+1900;
+          document.getElementById('TitleText').innerHTML = curMonth+" "+curYear+" RSA Token Renew Form";
+        </script>
+      </div></header>
+    <form action="/resultPage" method="POST" name="form" enctype="multipart/form-data">
+      <section class="u-align-center u-clearfix u-image u-section-1" id="carousel_ad7a" data-image-width="150" data-image-height="119">
+        <div class="u-clearfix u-sheet u-sheet-1">
+          <p class="u-text u-text-grey-60 u-text-1">Fill in the form with correct info.&nbsp;</p>
+          <div class="u-expanded-width u-form u-form-1">
+            <div class="u-clearfix u-form-horizontal u-form-spacing-30 u-inner-form" style="padding: 10px" source="custom" name="form">
+              <div class="u-form-group">
+                <label for="UserID" class="u-custom-font u-font-georgia u-label u-text-grey-70 u-label-1">User ID</label>
+                <input type="text" placeholder="Enter your network ID" id="UserID" name="UserID" class="u-border-4 u-border-grey-15 u-custom-font u-input u-input-round u-radius-17 u-text-palette-1-dark-1 u-input-1" required="required">
+              </div>
+              <div class="u-form-group u-form-name u-form-group-2">
+                <label for="ManagerName" class="u-custom-font u-font-georgia u-label u-text-grey-70 u-label-2">Manager Name</label>
+                <input type="text" placeholder="Your approval Manager" id="ManagerName" name="ManagerName" class="u-border-4 u-border-grey-15 u-custom-font u-input u-input-round u-radius-17 u-text-palette-1-dark-1 u-input-2" required="">
+              </div>
+              <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+              <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+              <input type="hidden" value="" name="recaptchaResponse">
+            </div>
+          </div>
+          <div class="u-form u-form-2">
+            <div class="u-clearfix u-form-horizontal u-form-spacing-30 u-inner-form" style="padding: 10px" source="custom" name="form">
+              <div class="u-form-group">
+                <label for="FirstName" class="u-custom-font u-font-georgia u-label u-text-grey-70 u-label-3">First Name</label>
+                <input type="text" placeholder="Enter your first name" id="FirstName" name="FirstName" class="u-border-4 u-border-grey-15 u-custom-font u-input u-input-round u-radius-17 u-text-palette-1-dark-1 u-input-3" required="required">
+              </div>
+              <div class="u-form-group u-form-name u-form-group-5">
+                <label for="LastName" class="u-custom-font u-font-georgia u-label u-text-grey-70 u-label-4">Last Name</label>
+                <input type="text" placeholder="Enter your last name" id="LastName" name="LastName" class="u-border-4 u-border-grey-15 u-custom-font u-input u-input-round u-radius-17 u-text-palette-1-dark-1 u-input-4" required="">
+              </div>
+              <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+              <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+              <input type="hidden" value="" name="recaptchaResponse">
+            </div>
+          </div>
+          <div class="u-expanded-width u-form u-form-3">
+            <div class="u-clearfix u-form-horizontal u-form-spacing-30 u-inner-form" style="padding: 10px" source="custom" name="form">
+              <div class="u-form-group">
+                <label for="CostCentre" class="u-custom-font u-font-georgia u-label u-text-grey-70 u-label-5">Cost Centre</label>
+                <input type="text" placeholder="Enter your Cost Centre #" id="CostCentre" name="CostCentre" class="u-border-4 u-border-grey-15 u-custom-font u-input u-input-round u-radius-17 u-text-palette-1-dark-1 u-input-5" required="required">
+              </div>
+              <div class="u-form-group u-form-name u-form-group-8">
+                <label for="FAC" class="u-custom-font u-font-georgia u-label u-text-grey-70 u-label-6">FAC</label>
+                <input type="text" placeholder="Entre Your FAC #" id="FAC" name="FAC" class="u-border-4 u-border-grey-15 u-custom-font u-input u-input-round u-radius-17 u-text-palette-1-dark-1 u-input-6" required="">
+              </div>
+              <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+              <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+              <input type="hidden" value="" name="recaptchaResponse">
+            </div>
+          </div>
+          <p class="u-custom-font u-font-georgia u-text u-text-2" for="PickupLocation"><b>Pickup Location</b>
+            <br>
+          </p>
+          <div class="u-form u-form-4">
+            <div class="u-clearfix u-form-spacing-50 u-form-vertical u-inner-form" style="padding: 0;" source="custom">
+              <div class="u-form-group u-form-radiobutton u-form-group-10">
+                <div class="u-form-radio-button-wrapper" id="phonetype">
+                  <input type="radio" name="PhoneType" for="PhoneType" value="Andoid">
+                  <label class="u-custom-font u-font-georgia u-label u-label-7">Andoid</label>
+                  <br>
+                  <input type="radio" name="PhoneType" for="PhoneType" value="iPhone">
+                  <label class="u-custom-font u-font-georgia u-label u-label-8">iPhone</label>
+                  <br>
+                </div>
+              </div>
+              <div class="u-align-left u-form-group u-form-submit">
+                <input type="submit" value="submit" class="u-form-control-hidden">
+              </div>
+              <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+              <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+              <input type="hidden" value="" name="recaptchaResponse">
+            </div>
+          </div>
+          <p class="u-custom-font u-font-georgia u-text u-text-default u-text-3" for="PhoneType">Phone Type</p>
+          <p class="u-custom-font u-font-georgia u-text u-text-4">Token Type</p>
+          <div class="u-form u-form-5">
+            <div class="u-clearfix u-form-spacing-50 u-form-vertical u-inner-form" style="padding: 0;" source="custom" name="form">
+              <div class="u-form-group u-form-radiobutton u-form-group-12" id="TokenType">
+                <div class="u-form-radio-button-wrapper">
+                  <input type="radio" name="TokenType" for="TokenType" value="Hardware Token" required="required" onclick="changeTokenType(this);">
+                  <label class="u-label u-label-9" for="TokenType">Hardware Token</label>
+                  <br>
+                  <input type="radio" name="TokenType" for="TokenType" value="Software Token" required="required" onclick="changeTokenType(this);">
+                  <label class="u-label u-label-10" for="TokenType">Software Token</label>
+                  <br>
+                </div>
+              </div>
+              <div class="u-align-left u-form-group u-form-submit">
+                <input type="submit" value="submit" class="u-form-control-hidden">
+              </div>
+              <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+              <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+              <input type="hidden" value="" name="recaptchaResponse">
+            </div>
+          </div>
+          <input type="submit" class="u-border-radius-19 u-btn u-btn-round u-button-style u-custom-font u-font-arial u-text-active-grey-50 u-text-hover-palette-4-light-3 u-btn-1" value="Submit"></input>
+          <div class="u-form u-form-6">
+            <form action="#" method="POST" class="u-clearfix u-form-spacing-50 u-form-vertical u-inner-form" style="padding: 0;" source="custom" name="form">
+              <div class="u-form-group u-form-radiobutton u-form-group-14">
+                <div class="u-form-radio-button-wrapper" id="PickupLocation">
+                  <input type="radio" name="PickupLocation" for="PickupLocation" value="Metro Hall">
+                  <label class="u-custom-font u-font-georgia u-label u-label-11">Metro Hall</label>
+                  <br>
+                  <input type="radio" name="PickupLocation" for="PickupLocation" value="City Hall">
+                  <label class="u-custom-font u-font-georgia u-label u-label-12">City Hall</label>
+                  <br>
+                  <input type="radio" name="PickupLocation" for="PickupLocation" value="Scarborough CC">
+                  <label class="u-custom-font u-font-georgia u-label u-label-13">Scarborough CC</label>
+                  <br>
+                  <input type="radio" name="PickupLocation" for="PickupLocation" value="North   York   CC">
+                  <label class="u-custom-font u-font-georgia u-label u-label-14">North   York   CC</label>
+                  <br>
+                  <input type="radio" name="PickupLocation" for="PickupLocation" value="Etobicoke CC">
+                  <label class="u-custom-font u-font-georgia u-label u-label-15">Etobicoke CC</label>
+                  <br>
+                  <input type="radio" name="PickupLocation" for="PickupLocation" value="703 Don Mills rd">
+                  <label class="u-custom-font u-font-georgia u-label u-label-16">703 Don Mills rd</label>
+                  <br>
+                </div>
+              </div>
+              <div class="u-align-left u-form-group u-form-submit">
+                <input type="submit" value="submit" class="u-form-control-hidden">
+              </div>
+              <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+              <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+              <input type="hidden" value="" name="recaptchaResponse">
+            </form>
+          </div>
+        </div>
+      </section>
+    </form>
+    
+    
+    <footer class="u-align-left u-clearfix u-footer u-palette-1-dark-2 u-footer" id="sec-9d49"><div class="u-clearfix u-sheet u-sheet-1"></div></footer>
+  </body>
+</html>
